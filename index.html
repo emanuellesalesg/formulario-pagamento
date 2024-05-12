@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+        <div class="header"><h1>Checkout Seguro 🔐</h1></div>
+        <form action="">
+            <section class="sec1">
+                <div class="title_form">
+                    <h1>Cartão de Crédito</h1>
+                </div>
+                <div><input class="input" placeholder="Nome no Cartão" type="text" required></div>
+                <div><input class="input"  type="number" placeholder="Cartão de Crédito"
+                id="cartao_credito" name="cartao_credito" min="0" max="9999999999999999" placeholder="DD/MM" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="16" required></div>
+                <div class="input_double">
+                    <input type="number" placeholder="CVV" id="MMDD" name="DD/MM" min="0" max="9999" placeholder="DD/MM" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3" required>
+                    <input type="number" id="MMDD" name="DD/MM" min="0" max="9999" placeholder="DD/MM" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" required>
+                </div>
+                <div class="btn"><button>Comprar</button></div>
+            </section>
+            <section class="sec2">
+                <div class="title_form"><h1>Informações</h1></div>
+                <div><input class="input"  type="text" placeholder="Rua" required></div>
+                <div class="input_double">
+                    <input type="text" placeholder="Bairro" required>
+                    <input type="text" placeholder="Número"  placeholder="Número" id="numero" name="numero" min="0" max="9999" placeholder="555" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" required>
+                </div>
+                <div class="input_double">
+                    <input type="number" placeholder="CEP" id="CEP" name="CEP" min="0" max="9999999" placeholder="5555-555" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" required>
+                    <input type="text" placeholder="Referência">
+                </div>
+            </section>
+        </form>
+        <footer><p>Copyright © Emanuelle Goncalo</p></footer>
+</body>
+
+</html>

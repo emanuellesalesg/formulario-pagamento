@@ -1,0 +1,25 @@
+@media(max-width: 600px){
+    form{
+        flex-direction: column;
+    }
+    section{
+        width: 280px;
+    }
+    .input{
+        width: 88%;
+    }
+    .sec2{
+        order: -1;
+    }
+    
+}
+@media(max-width: 800px){
+    .input{
+        width: 267px;
+    }
+    section{
+        height: 280px;
+        width: 300px;
+    }
+    
+}
